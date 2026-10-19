@@ -7,6 +7,9 @@ original training environment.
 - Final local suite: **116 tests passed**, none skipped. This includes the
   retained regression tests, portable config checks, prior tensor smoke tests,
   SFT identity/gradient checks and a synthetic end-to-end protocol audit.
+- A fresh `git clone --no-local` outside the original workspace also passed all
+  116 tests and the release audit using the isolated CPU environment. No files
+  from the parent workspace are needed for those checks.
 - Dependency consistency check: all 57 installed packages compatible. The
   exact Linux CPU package snapshot is in `requirements-cpu-validation.txt`.
 - Nine command-line entrypoints opened successfully with `--help`, including
