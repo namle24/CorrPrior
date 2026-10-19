@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="566" viewBox="0 0 1440 566" role="img" aria-labelledby="title description">
+<title id="title">CorrPrior: reported PSNR effects and paired 95% confidence intervals</title>
+<desc id="description">Left: matched model comparisons on RealSR and SVSR. Right: feature interventions on one fixed CorrPrior checkpoint on RealSR. Positive values favor the first model or the original aligned features. The panels have different x-axis ranges. Interventions are not trained-baseline gains.</desc>
+<rect width="1440" height="566" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#263238">
+<rect x="18" y="14" width="690" height="510" rx="14" fill="#f8fafc" stroke="#c5cfd8"/>
+<text x="42.00" y="49.00" font-size="23" font-weight="bold" text-anchor="start" fill="#263238">(a) Matched model comparisons</text>
+<text x="42.00" y="80.00" font-size="17" font-weight="normal" text-anchor="start" fill="#52626e">Positive favors the first model</text>
+<text x="42.00" y="106.00" font-size="16" font-weight="normal" text-anchor="start" fill="#52626e">Same downstream SR training budget</text>
+<line x1="402.80" y1="127.00" x2="402.80" y2="462.00" stroke="#aab4bf" stroke-width="1.0" stroke-dasharray="5 6"/>
+<line x1="334.00" y1="472.00" x2="678.00" y2="472.00" stroke="#aab4bf" stroke-width="1.0"/>
+<line x1="334.00" y1="472.00" x2="334.00" y2="479.00" stroke="#aab4bf" stroke-width="1.0"/>
+<text x="334.00" y="500.00" font-size="15" font-weight="normal" text-anchor="middle" fill="#52626e">-0.05</text>
+<line x1="402.80" y1="472.00" x2="402.80" y2="479.00" stroke="#aab4bf" stroke-width="1.0"/>
+<text x="402.80" y="500.00" font-size="15" font-weight="normal" text-anchor="middle" fill="#52626e">0.00</text>
+<line x1="471.60" y1="472.00" x2="471.60" y2="479.00" stroke="#aab4bf" stroke-width="1.0"/>
+<text x="471.60" y="500.00" font-size="15" font-weight="normal" text-anchor="middle" fill="#52626e">0.05</text>
+<line x1="540.40" y1="472.00" x2="540.40" y2="479.00" stroke="#aab4bf" stroke-width="1.0"/>
+<text x="540.40" y="500.00" font-size="15" font-weight="normal" text-anchor="middle" fill="#52626e">0.10</text>
+<line x1="609.20" y1="472.00" x2="609.20" y2="479.00" stroke="#aab4bf" stroke-width="1.0"/>
+<text x="609.20" y="500.00" font-size="15" font-weight="normal" text-anchor="middle" fill="#52626e">0.15</text>
+<line x1="678.00" y1="472.00" x2="678.00" y2="479.00" stroke="#aab4bf" stroke-width="1.0"/>
+<text x="678.00" y="500.00" font-size="15" font-weight="normal" text-anchor="middle" fill="#52626e">0.20</text>
+<text x="506.00" y="519.00" font-size="15" font-weight="normal" text-anchor="middle" fill="#263238">PSNR difference (dB)</text>
+<text x="42.00" y="146.00" font-size="19" font-weight="bold" text-anchor="start" fill="#263238">CorrPrior</text>
+<text x="42.00" y="171.00" font-size="19" font-weight="normal" text-anchor="start" fill="#263238">vs DRCT-RandPrior</text>
+<text x="42.00" y="195.00" font-size="15" font-weight="normal" text-anchor="start" fill="#52626e">RealSR</text>
+<line x1="527.05" y1="163.00" x2="654.20" y2="163.00" stroke="#007f5f" stroke-width="3"/>
+<line x1="527.05" y1="154.00" x2="527.05" y2="172.00" stroke="#007f5f" stroke-width="2"/>
+<line x1="654.20" y1="154.00" x2="654.20" y2="172.00" stroke="#007f5f" stroke-width="2"/>
+<circle cx="584.57" cy="163" r="7" fill="#007f5f"/>
+<text x="584.57" y="143.00" font-size="18" font-weight="bold" text-anchor="middle" fill="#007f5f">+0.1321</text>
+<text x="42.00" y="277.00" font-size="19" font-weight="bold" text-anchor="start" fill="#263238">CorrPrior-Gated</text>
+<text x="42.00" y="302.00" font-size="19" font-weight="normal" text-anchor="start" fill="#263238">vs CorrPrior</text>
+<text x="42.00" y="326.00" font-size="15" font-weight="normal" text-anchor="start" fill="#52626e">RealSR</text>
+<line x1="393.86" y1="294.00" x2="407.07" y2="294.00" stroke="#657889" stroke-width="3"/>
+<line x1="393.86" y1="285.00" x2="393.86" y2="303.00" stroke="#657889" stroke-width="2"/>
+<line x1="407.07" y1="285.00" x2="407.07" y2="303.00" stroke="#657889" stroke-width="2"/>
+<circle cx="400.46" cy="294" r="7" fill="#657889"/>
+<text x="400.46" y="274.00" font-size="18" font-weight="bold" text-anchor="middle" fill="#657889">-0.0017</text>
+<text x="42.00" y="408.00" font-size="19" font-weight="bold" text-anchor="start" fill="#263238">CorrPrior</text>
+<text x="42.00" y="433.00" font-size="19" font-weight="normal" text-anchor="start" fill="#263238">vs DRCT-Base</text>
+<text x="42.00" y="457.00" font-size="15" font-weight="normal" text-anchor="start" fill="#52626e">SVSR</text>
+<line x1="386.01" y1="425.00" x2="428.12" y2="425.00" stroke="#657889" stroke-width="3"/>
+<line x1="386.01" y1="416.00" x2="386.01" y2="434.00" stroke="#657889" stroke-width="2"/>
+<line x1="428.12" y1="416.00" x2="428.12" y2="434.00" stroke="#657889" stroke-width="2"/>
+<circle cx="406.93" cy="425" r="7" fill="#657889"/>
+<text x="406.93" y="405.00" font-size="18" font-weight="bold" text-anchor="middle" fill="#657889">+0.0030</text>
+<rect x="732" y="14" width="690" height="510" rx="14" fill="#f8fafc" stroke="#c5cfd8"/>
+<text x="756.00" y="49.00" font-size="23" font-weight="bold" text-anchor="start" fill="#263238">(b) Fixed-checkpoint interventions</text>
+<text x="756.00" y="80.00" font-size="17" font-weight="normal" text-anchor="start" fill="#52626e">Positive favors aligned CorrPrior features</text>
+<text x="756.00" y="106.00" font-size="16" font-weight="normal" text-anchor="start" fill="#52626e">RealSR only; learned weights are unchanged</text>
+<line x1="1040.00" y1="127.00" x2="1040.00" y2="462.00" stroke="#aab4bf" stroke-width="1.0" stroke-dasharray="5 6"/>
+<line x1="1040.00" y1="472.00" x2="1388.00" y2="472.00" stroke="#aab4bf" stroke-width="1.0"/>
+<line x1="1040.00" y1="472.00" x2="1040.00" y2="479.00" stroke="#aab4bf" stroke-width="1.0"/>
+<text x="1040.00" y="500.00" font-size="15" font-weight="normal" text-anchor="middle" fill="#52626e">0.0</text>
+<line x1="1109.60" y1="472.00" x2="1109.60" y2="479.00" stroke="#aab4bf" stroke-width="1.0"/>
+<text x="1109.60" y="500.00" font-size="15" font-weight="normal" text-anchor="middle" fill="#52626e">0.1</text>
+<line x1="1179.20" y1="472.00" x2="1179.20" y2="479.00" stroke="#aab4bf" stroke-width="1.0"/>
+<text x="1179.20" y="500.00" font-size="15" font-weight="normal" text-anchor="middle" fill="#52626e">0.2</text>
+<line x1="1248.80" y1="472.00" x2="1248.80" y2="479.00" stroke="#aab4bf" stroke-width="1.0"/>
+<text x="1248.80" y="500.00" font-size="15" font-weight="normal" text-anchor="middle" fill="#52626e">0.3</text>
+<line x1="1318.40" y1="472.00" x2="1318.40" y2="479.00" stroke="#aab4bf" stroke-width="1.0"/>
+<text x="1318.40" y="500.00" font-size="15" font-weight="normal" text-anchor="middle" fill="#52626e">0.4</text>
+<line x1="1388.00" y1="472.00" x2="1388.00" y2="479.00" stroke="#aab4bf" stroke-width="1.0"/>
+<text x="1388.00" y="500.00" font-size="15" font-weight="normal" text-anchor="middle" fill="#52626e">0.5</text>
+<text x="1214.00" y="519.00" font-size="15" font-weight="normal" text-anchor="middle" fill="#263238">PSNR difference (dB)</text>
+<text x="756.00" y="198.00" font-size="19" font-weight="bold" text-anchor="start" fill="#263238">Aligned</text>
+<text x="756.00" y="223.00" font-size="19" font-weight="normal" text-anchor="start" fill="#263238">vs zero prior</text>
+<text x="756.00" y="247.00" font-size="15" font-weight="normal" text-anchor="start" fill="#52626e">RealSR</text>
+<line x1="1221.24" y1="215.00" x2="1303.71" y2="215.00" stroke="#007f5f" stroke-width="3"/>
+<line x1="1221.24" y1="206.00" x2="1221.24" y2="224.00" stroke="#007f5f" stroke-width="2"/>
+<line x1="1303.71" y1="206.00" x2="1303.71" y2="224.00" stroke="#007f5f" stroke-width="2"/>
+<circle cx="1262.30" cy="215" r="7" fill="#007f5f"/>
+<text x="1262.30" y="195.00" font-size="18" font-weight="bold" text-anchor="middle" fill="#007f5f">+0.3194</text>
+<text x="756.00" y="362.00" font-size="19" font-weight="bold" text-anchor="start" fill="#263238">Aligned</text>
+<text x="756.00" y="387.00" font-size="19" font-weight="normal" text-anchor="start" fill="#263238">vs shifted prior</text>
+<text x="756.00" y="411.00" font-size="15" font-weight="normal" text-anchor="start" fill="#52626e">RealSR</text>
+<line x1="1234.39" y1="379.00" x2="1356.40" y2="379.00" stroke="#007f5f" stroke-width="3"/>
+<line x1="1234.39" y1="370.00" x2="1234.39" y2="388.00" stroke="#007f5f" stroke-width="2"/>
+<line x1="1356.40" y1="370.00" x2="1356.40" y2="388.00" stroke="#007f5f" stroke-width="2"/>
+<circle cx="1295.99" cy="379" r="7" fill="#007f5f"/>
+<text x="1295.99" y="359.00" font-size="18" font-weight="bold" text-anchor="middle" fill="#007f5f">+0.3678</text>
+<text x="720.00" y="550.00" font-size="16" font-weight="normal" text-anchor="middle" fill="#52626e">Points: reported effects. Bars: paired 95% CIs. Test-sample uncertainty, not variation across training seeds.</text>
+</g>
+</svg>

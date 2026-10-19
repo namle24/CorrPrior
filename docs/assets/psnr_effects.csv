@@ -1,0 +1,6 @@
+group,dataset,comparison,delta_psnr_db,ci_low_db,ci_high_db
+matched,RealSR,CorrPrior vs DRCT-RandPrior,0.1321,0.0903,0.1827
+matched,RealSR,CorrPrior-Gated vs CorrPrior,-0.0017,-0.0065,0.0031
+matched,SVSR,CorrPrior vs DRCT-Base,0.0030,-0.0122,0.0184
+intervention,RealSR,Aligned vs zero prior,0.3194,0.2604,0.3789
+intervention,RealSR,Aligned vs shifted prior,0.3678,0.2793,0.4546

@@ -16,7 +16,7 @@ or end-to-end reproduction in this extracted repository is claimed.
 
 [Method](#method) · [Results](#results) · [Installation](#installation) ·
 [Training](docs/reproduction.md) · [Evaluation](docs/evaluation.md) ·
-[Reproducibility](docs/reproducibility.md)
+[Reproducibility](docs/reproducibility.md) · [Figures](docs/figures.md)
 
 ## Method
 
@@ -25,6 +25,15 @@ how much each observed patch differs from its clean reference. The paired
 differences provide continuous targets without manual degradation labels.
 For SR, the trained encoder is frozen and its spatial features guide DRCT
 through residual Spatial Feature Transform (SFT) blocks.
+
+![CorrPrior architecture: train the ViT prior in Stages 1 and 2, then freeze its encoder and transfer spatial features to DRCT through three trainable SFT blocks.](docs/assets/architecture.png)
+
+**Architecture.** The dashed green connection transfers learned encoder weights,
+not training images. Stage 3 freezes that encoder and trains the complete DRCT
+backbone and the added SFT blocks. The prior decoder and correction head are
+not used in the main SR model. Input thumbnails are illustrative.
+[Full-size figure](docs/assets/architecture.png) ·
+[Editable draw.io source](docs/assets/architecture.drawio)
 
 | Stage | Input | What is trained | Purpose |
 | --- | --- | --- | --- |
@@ -63,6 +72,27 @@ single-seed results, and the confidence intervals describe test-sample
 uncertainty. See [result scope](docs/results.md) for the exact comparisons and
 remaining experiments.
 
+![PSNR effects with paired 95% confidence intervals, separating matched model comparisons from fixed-checkpoint feature interventions.](docs/assets/psnr_effects.svg)
+
+**What the controls show.** Left: the learned prior improves RealSR PSNR over
+the random-prior control; the gated and SVSR PSNR comparisons remain
+inconclusive. Right: removing or shifting prior features reduces the fixed
+CorrPrior checkpoint's PSNR. These intervention effects are not gains over
+retrained baselines. Error bars show test-sample uncertainty, not variation
+across training seeds. [Values and full comparisons](docs/results.md).
+
+### Qualitative results
+
+![RealSR crops from Canon and Nikon: input, BSRGAN, SwinIR-L, DRCT-Base, DRCT-RandPrior, CorrPrior and ground truth. CorrPrior is outlined in blue.](docs/assets/qualitative_comparison.jpg)
+
+**RealSR examples.** CorrPrior is outlined in blue. Canon_043 and Nikon_033
+are lower-median cases; Canon_011 and Nikon_039 are nearest the third quartile
+of CorrPrior's full-image PSNR improvement over DRCT-RandPrior within each
+camera subset. These are not maximum-gain examples. Differences within the
+DRCT group are subtle; the crops illustrate reconstruction behavior rather
+than establish universal visual superiority.
+[Full-size comparison](docs/assets/qualitative_comparison.jpg).
+
 ## Installation
 
 The portable validation environment uses Python 3.12 and PyTorch 2.5.1.
@@ -87,9 +117,11 @@ torchvision import alias needed by BasicSR; it does not change model behavior.
 
 ## Data and checkpoints
 
-Datasets, trained weights, raw outputs and per-image measurements are **not
-included**. Obtain datasets through their original providers and comply with
-their terms. Checkpoint release is pending author approval; there is currently
+Dataset collections, trained weights, raw outputs and per-image measurements
+are **not included**. Only the selected illustrative thumbnails and comparison
+crops shown above are packaged as documentation figures. Obtain datasets
+through their original providers and comply with their terms. Checkpoint
+release is pending author approval; there is currently
 no public download link.
 
 The main workflow requires aligned training crops, the selected prior checkpoint
@@ -119,6 +151,7 @@ tools/degradation/ Degradation implementation used by the prior-data generator
 scripts/           Portable launcher, config creation and release checks
 tests/             Additional extraction and configuration tests
 docs/              Data, reproduction, evaluation, results and provenance
+docs/assets/       Architecture, editable draw.io, result figures and plotted values
 ```
 
 The historical `PD_MAE_SR` and `RN_PD_MAE` names are retained to preserve imports,

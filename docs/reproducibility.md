@@ -9,10 +9,14 @@
 - Portable experiment templates, a config generator, paired metric/statistical
   tools, protocol checks and selected regression tests.
 - Aggregate reported results and code provenance, without the manuscript.
+- The approved architecture figure and editable draw.io source, a quantitative
+  effect plot, and the existing selected RealSR comparison panel. Figure
+  provenance and reuse boundaries are recorded in [figures.md](figures.md).
 
 ## What is not included
 
-- Dataset images, original crop inventories and generated degradation corpora.
+- Dataset collections, original crop inventories and generated degradation
+  corpora. Only selected thumbnails/crops within documentation figures are included.
 - Prior, backbone, SR, VGG or perceptual-evaluation weights.
 - Full-resolution outputs, private per-image reports, credentials or server scripts.
 - Manuscript PDFs/LaTeX, advisor documents, old paper bundles and other research projects.
@@ -52,6 +56,7 @@ has not been validated; the repository can still be read and edited on a Mac.
 ```bash
 python -m pytest -q
 python scripts/check_release.py
+python scripts/render_result_figure.py --check
 ```
 
 The release checker verifies retained source hashes, Python syntax, documentation
@@ -72,6 +77,8 @@ See `validation.md` for the checks actually executed for this extraction.
   for numerical reproduction without violating dataset terms.
 - [ ] Record the original GPU environment and validate the documented training
   and inference commands on the intended hardware.
+- [ ] Confirm permission to redistribute the dataset-derived thumbnails and
+  comparison crops in the documentation figures.
 - [ ] Update publication status, paper link and citation only when confirmed.
 - [ ] Review all files and commit history before changing visibility to public.
 

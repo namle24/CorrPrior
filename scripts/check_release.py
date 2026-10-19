@@ -30,8 +30,36 @@ def source_files():
             and not (set(p.relative_to(ROOT).parts) & excluded)]
 
 
+def check_assets(root):
+    """Allow only hash-verified, explicitly listed documentation images."""
+    errors, binary_assets = [], set()
+    manifest = json.loads((root / "docs/assets/manifest.json").read_text())
+    for record in manifest["files"]:
+        relative = Path(record["path"])
+        if (relative.is_absolute() or ".." in relative.parts
+                or relative.parts[:2] != ("docs", "assets")
+                or relative.suffix not in {".png", ".jpg", ".svg", ".drawio", ".csv"}):
+            errors.append(f"Invalid documentation asset path: {relative}")
+            continue
+        path = root / relative
+        if path.is_symlink() or not path.is_file():
+            errors.append(f"Missing or symlinked documentation asset: {relative}")
+            continue
+        payload = path.read_bytes()
+        if hashlib.sha256(payload).hexdigest() != record["sha256"]:
+            errors.append(f"Changed documentation asset: {relative} (review and update provenance)")
+            continue
+        magic = {".png": b"\x89PNG\r\n\x1a\n", ".jpg": b"\xff\xd8\xff"}.get(relative.suffix)
+        if magic is not None:
+            if not payload.startswith(magic):
+                errors.append(f"Invalid image signature: {relative}")
+            else:
+                binary_assets.add(relative.as_posix())
+    return errors, binary_assets
+
+
 def audit():
-    errors = []
+    errors, binary_assets = check_assets(ROOT)
     manifest = json.loads((ROOT / "docs/source_manifest.json").read_text())
     for record in manifest["files"]:
         path = ROOT / record["path"]
@@ -51,6 +79,8 @@ def audit():
             errors.append(f"Forbidden release artifact: {relative}")
         if path.stat().st_size > 2 * 1024 * 1024:
             errors.append(f"Unexpected file larger than 2 MiB: {relative}")
+        if relative.as_posix() in binary_assets:
+            continue
         try:
             text = path.read_text(encoding="utf-8")
         except UnicodeDecodeError:
@@ -78,6 +108,6 @@ if __name__ == "__main__":
     if failures:
         print("\n".join(failures), file=sys.stderr)
         raise SystemExit(1)
-    print(f"PASS: {count} source files audited; {retained} retained-source hashes match.")
+    print(f"PASS: {count} release files audited; {retained} retained-source hashes match.")
     print("PASS: Python syntax and local Markdown links; no flagged release artifacts or credential patterns.")
     print("This bounded check does not certify complete reproducibility or an exhaustive security review.")

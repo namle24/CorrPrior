@@ -1,0 +1,43 @@
+{
+  "added_on": "2026-10-19",
+  "scope": "Selected documentation figures only; no manuscript or dataset collection.",
+  "source_repository": "namle24/DLEnhance_ImageQuality",
+  "files": [
+    {
+      "path": "docs/assets/architecture.png",
+      "source": "results/pd_mae_drct/journal_drawio_final_20261014/corrprior_unified_preview.png",
+      "operation": "byte-for-byte copy of approved architecture preview",
+      "width": 2002,
+      "height": 1478,
+      "sha256": "856826029b647410d5f02c74923a6d620ec910009a523ac31ec3728033d034da"
+    },
+    {
+      "path": "docs/assets/architecture.drawio",
+      "source": "results/pd_mae_drct/journal_drawio_final_20261014/corrprior_unified.drawio",
+      "operation": "byte-for-byte copy of corresponding editable source",
+      "sha256": "fd036397ca353d5ae2bb0a02dfc4c9bdd9bb1c38549f852c24f151dca4a5abed"
+    },
+    {
+      "path": "docs/assets/qualitative_comparison.jpg",
+      "source": "results/pd_mae_drct/journal_drawio_final_20261014/qualitative_comparison.jpg",
+      "operation": "byte-for-byte copy of existing RealSR comparison panel",
+      "width": 2119,
+      "height": 1337,
+      "sha256": "ec8d25a2e09df4bc156c8f50753680a42085e7b1e13fb7c8382e7d3b26969edc"
+    },
+    {
+      "path": "docs/assets/psnr_effects.csv",
+      "source": "Existing reported effects and paired confidence intervals, main.tex controlled comparisons and evaluation appendix; manuscript snapshot in docs/provenance.md",
+      "operation": "transcribe reported aggregate values, not new measurements",
+      "sha256": "251007570ab70eea11762fa9f0904eed9173f0c2264ad2459d623bbb33726e51"
+    },
+    {
+      "path": "docs/assets/psnr_effects.svg",
+      "source": "docs/assets/psnr_effects.csv",
+      "operation": "deterministic SVG rendering by scripts/render_result_figure.py",
+      "width": 1440,
+      "height": 566,
+      "sha256": "3a2e61a9307eeeee86fa21a76b2c4e570b454d412eda5f517d889f6a860d3dc8"
+    }
+  ]
+}

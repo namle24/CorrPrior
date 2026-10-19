@@ -22,3 +22,5 @@ jobs:
         run: python -m pytest -q
       - name: Check extracted release
         run: python scripts/check_release.py
+      - name: Check result plot matches reported data
+        run: python scripts/render_result_figure.py --check
