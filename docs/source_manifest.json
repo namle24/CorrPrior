@@ -1,0 +1,469 @@
+{
+  "source_repository": "namle24/DLEnhance_ImageQuality",
+  "source_commit": "7452229437d086d3983d4612f3413dd134950bb9",
+  "extracted_on": "2026-10-19",
+  "files": [
+    {
+      "path": "PD_MAE_SR/archs/mae_arch.py",
+      "source_sha256": "014528c2d59fc2e6d28237c713c7d8f7a5e8eb800fe95bbe48cd7bfa7953c53f",
+      "exported_sha256": "014528c2d59fc2e6d28237c713c7d8f7a5e8eb800fe95bbe48cd7bfa7953c53f",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/datasets/multilevel_restoration_dataset.py",
+      "source_sha256": "75f71525ff1acc5abcdf24fa4d206060330598baea01c51237c1cc774a2ac689",
+      "exported_sha256": "75f71525ff1acc5abcdf24fa4d206060330598baea01c51237c1cc774a2ac689",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/datasets/partial_restoration_dataset.py",
+      "source_sha256": "fbfb75695a079bc93a626400c30288f361ef59472a0c6b7f4f10ca0f0d853b8a",
+      "exported_sha256": "fbfb75695a079bc93a626400c30288f361ef59472a0c6b7f4f10ca0f0d853b8a",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/experiments/train_partial_restoration_need.py",
+      "source_sha256": "a76ec3f43bd1e66ffb2589f2e088668858303fc6006847e7fb2ab2ddccaffb32",
+      "exported_sha256": "a76ec3f43bd1e66ffb2589f2e088668858303fc6006847e7fb2ab2ddccaffb32",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/experiments/train_restoration_need.py",
+      "source_sha256": "41fa5097bbbc27c2cf5555fcdf9c24089de6000e3d504286a21b2b125e67707a",
+      "exported_sha256": "41fa5097bbbc27c2cf5555fcdf9c24089de6000e3d504286a21b2b125e67707a",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/experiments/evaluate_partial_restoration_need.py",
+      "source_sha256": "6855a522e91409cf1db32d4f7b4b65d7bc7c1f7f159c6e60553192e30209b361",
+      "exported_sha256": "6855a522e91409cf1db32d4f7b4b65d7bc7c1f7f159c6e60553192e30209b361",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/experiments/evaluate_restoration_need.py",
+      "source_sha256": "e1583230b6bbf5610491b33588bfb4256e3d79db9c4e41c9657b130eafac3d4b",
+      "exported_sha256": "e1583230b6bbf5610491b33588bfb4256e3d79db9c4e41c9657b130eafac3d4b",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/experiments/select_restoration_need_checkpoint.py",
+      "source_sha256": "6ee03007f328732e3b33880594f47a54a1c1d7d439f1146e4ffcb40d0a1980d5",
+      "exported_sha256": "6ee03007f328732e3b33880594f47a54a1c1d7d439f1146e4ffcb40d0a1980d5",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/utils/generate_partial_restoration_dataset_v2.py",
+      "source_sha256": "82a84e9ed9b07b7cb410e73c6e765bf473e8553491f9877a1e87af1f08533f3e",
+      "exported_sha256": "82a84e9ed9b07b7cb410e73c6e765bf473e8553491f9877a1e87af1f08533f3e",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/utils/generate_spatial_mixture_benchmark.py",
+      "source_sha256": "005d1a9211531a0ffefe86c8d76791e7eafea4d191f17b79c37eda716a4bfa65",
+      "exported_sha256": "005d1a9211531a0ffefe86c8d76791e7eafea4d191f17b79c37eda716a4bfa65",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/utils/verify_spatial_mixture_benchmark.py",
+      "source_sha256": "b6bbab788103e0f0bd266688d87ef0c6fe83f1bdf0df27fc456754c7186dfd86",
+      "exported_sha256": "b6bbab788103e0f0bd266688d87ef0c6fe83f1bdf0df27fc456754c7186dfd86",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/utils/pd_mae_utils.py",
+      "source_sha256": "20ed652e215326a8f041858787495dfb5dcd31477b241b6896cec0bdd2bc3c4d",
+      "exported_sha256": "20ed652e215326a8f041858787495dfb5dcd31477b241b6896cec0bdd2bc3c4d",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/tests/test_multilevel_restoration_alignment.py",
+      "source_sha256": "55b321dc50a9e763a4bc763929e551ff4d40f7502cc740007c03e2c0e75139a3",
+      "exported_sha256": "55b321dc50a9e763a4bc763929e551ff4d40f7502cc740007c03e2c0e75139a3",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/tests/test_partial_evaluator_split.py",
+      "source_sha256": "e6823be47c4424d2115e09aceb77f07aa261e120c2663b76cd00420247accd90",
+      "exported_sha256": "e6823be47c4424d2115e09aceb77f07aa261e120c2663b76cd00420247accd90",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/tests/test_restoration_need_lineage.py",
+      "source_sha256": "2b2e0022c67f0d70fe3f096a37f538f0ce6885d425901a97b9b9488746aae3ab",
+      "exported_sha256": "2b2e0022c67f0d70fe3f096a37f538f0ce6885d425901a97b9b9488746aae3ab",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/tests/test_select_restoration_need_checkpoint.py",
+      "source_sha256": "7533a2d489e40c50964ce4ecd36c29c190f08ffa6d9ef1cf247f6acf9387eaf7",
+      "exported_sha256": "7533a2d489e40c50964ce4ecd36c29c190f08ffa6d9ef1cf247f6acf9387eaf7",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/tests/test_spatial_mixture_benchmark.py",
+      "source_sha256": "e60ce74e284ffdf8016b8ee18e17c8bf9962dc414ebea7c2b6caf50286a217c4",
+      "exported_sha256": "e60ce74e284ffdf8016b8ee18e17c8bf9962dc414ebea7c2b6caf50286a217c4",
+      "change": "unchanged"
+    },
+    {
+      "path": "PD_MAE_SR/tests/test_verify_spatial_mixture_benchmark.py",
+      "source_sha256": "22ea0c644a34a1763af23b22f24bdee661e726c1549182cbb6abd632b02e3757",
+      "exported_sha256": "22ea0c644a34a1763af23b22f24bdee661e726c1549182cbb6abd632b02e3757",
+      "change": "unchanged"
+    },
+    {
+      "path": "tools/degradation/RealisticDegradationGenerator_RealESRGAN.py",
+      "source_sha256": "f03929545d954392b4f12f134af508c528ac8a6d32e7b3b7beda09316c7316ec",
+      "exported_sha256": "f03929545d954392b4f12f134af508c528ac8a6d32e7b3b7beda09316c7316ec",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/LICENSE",
+      "source_sha256": "84c4b322533e9a8440d95e616047f9171c9b7adbbcbadf144e3418f71308d7ec",
+      "exported_sha256": "84c4b322533e9a8440d95e616047f9171c9b7adbbcbadf144e3418f71308d7ec",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/drct/__init__.py",
+      "source_sha256": "3de48d84cbe03e7d31bff8c75f17945b2c989ee687607c97caae4bed93d59d5f",
+      "exported_sha256": "3de48d84cbe03e7d31bff8c75f17945b2c989ee687607c97caae4bed93d59d5f",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/drct/archs/__init__.py",
+      "source_sha256": "dbc09cb160e21726ee2ab1be3cf004a565e31efef7dd437d698c2c53b6001c2e",
+      "exported_sha256": "dbc09cb160e21726ee2ab1be3cf004a565e31efef7dd437d698c2c53b6001c2e",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/drct/archs/DRCT_arch.py",
+      "source_sha256": "4fcf5e78ba61700539b9cb767804bcae74f0ddc964b823f84695c81f29348f21",
+      "exported_sha256": "4fcf5e78ba61700539b9cb767804bcae74f0ddc964b823f84695c81f29348f21",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/drct/archs/RNPDMAESwinIR_arch.py",
+      "source_sha256": "78735d90620b7980654f664b9de1dc5f7ff2ff125cd2df3057041c007dccb879",
+      "exported_sha256": "78735d90620b7980654f664b9de1dc5f7ff2ff125cd2df3057041c007dccb879",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/drct/data/__init__.py",
+      "source_sha256": "0619758e12ce342fff9edb487b5bd22060ceffb820108f6a3bdbe11e622c96f5",
+      "exported_sha256": "0619758e12ce342fff9edb487b5bd22060ceffb820108f6a3bdbe11e622c96f5",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/drct/data/multilevel_paired_image_dataset.py",
+      "source_sha256": "c0d5f910803c28e0e644db1b396e36af267319898a51b98beac6b56b07ce7d45",
+      "exported_sha256": "c0d5f910803c28e0e644db1b396e36af267319898a51b98beac6b56b07ce7d45",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/drct/models/__init__.py",
+      "source_sha256": "90322d38ee22db5610ed463eacda19744ae9ef0964667fe0b4955ddd61e75800",
+      "exported_sha256": "90322d38ee22db5610ed463eacda19744ae9ef0964667fe0b4955ddd61e75800",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/drct/models/drct_model.py",
+      "source_sha256": "ae9253cd72f61896e2a43edce8e3bfa71b3fc1bbd8c2b1df3c33b1f1122d9205",
+      "exported_sha256": "ae9253cd72f61896e2a43edce8e3bfa71b3fc1bbd8c2b1df3c33b1f1122d9205",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/drct/train.py",
+      "source_sha256": "26e26a35ce3580f9f741790b016243253e949c71a3e9a1665a15dd8a110faec1",
+      "exported_sha256": "26e26a35ce3580f9f741790b016243253e949c71a3e9a1665a15dd8a110faec1",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/drct/test.py",
+      "source_sha256": "d3dbf0ad57e214162d8da3097e17380ff3ec5f71c6a036a891e70efb73fc4cb3",
+      "exported_sha256": "d3dbf0ad57e214162d8da3097e17380ff3ec5f71c6a036a891e70efb73fc4cb3",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/drct/runtime_options.py",
+      "source_sha256": "9b6a988c5324fad823f3482b57c177487f5fd5e9b402cd01e9725f4899684abf",
+      "exported_sha256": "9b6a988c5324fad823f3482b57c177487f5fd5e9b402cd01e9725f4899684abf",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/run_legacy_basicsr_entrypoint.py",
+      "source_sha256": "f075931bf2f8b7bbc34a7d4d35fb3595644f9cd86b83aca02480b82a76a712bb",
+      "exported_sha256": "f075931bf2f8b7bbc34a7d4d35fb3595644f9cd86b83aca02480b82a76a712bb",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/audit_journal_training_protocol.py",
+      "source_sha256": "2618601945e3865330fd5e49af0351292c32fe20636e657acc971ead29cb6606",
+      "exported_sha256": "2618601945e3865330fd5e49af0351292c32fe20636e657acc971ead29cb6606",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/verify_journal_initialization.py",
+      "source_sha256": "92af0edc6c57caf13eda3deba7d5cb5cd05864ae188367b7951f37a073d2a366",
+      "exported_sha256": "92af0edc6c57caf13eda3deba7d5cb5cd05864ae188367b7951f37a073d2a366",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/evaluate_standard_sr_metrics.py",
+      "source_sha256": "f4c8858d41ec51bac975402b2c0f997f074d868a44759e6a73e6c28bc69ff587",
+      "exported_sha256": "f4c8858d41ec51bac975402b2c0f997f074d868a44759e6a73e6c28bc69ff587",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/evaluate_pyiqa_metrics.py",
+      "source_sha256": "0233cad09a5bafc0a58a0adda8542f63853a6b89028afe4db5eba25fca1d6e79",
+      "exported_sha256": "0233cad09a5bafc0a58a0adda8542f63853a6b89028afe4db5eba25fca1d6e79",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/paired_metric_statistics.py",
+      "source_sha256": "ac7f66bc11575a8f90ef14b0fcc3d1e10e221ad1e68d830de03a0be82bf51c9e",
+      "exported_sha256": "ac7f66bc11575a8f90ef14b0fcc3d1e10e221ad1e68d830de03a0be82bf51c9e",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/camera_balanced_metric_statistics.py",
+      "source_sha256": "c56c979d5c43c76fabd5b317f7ef7ed068be0f86b8581bd5284425b7883b4289",
+      "exported_sha256": "c56c979d5c43c76fabd5b317f7ef7ed068be0f86b8581bd5284425b7883b4289",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/profile_journal_model.py",
+      "source_sha256": "2caa08d0b5fbf715783483c7116a9b55feb1b1cf3ca47322733ee074e46e87ff",
+      "exported_sha256": "2caa08d0b5fbf715783483c7116a9b55feb1b1cf3ca47322733ee074e46e87ff",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/summarize_efficiency_profile.py",
+      "source_sha256": "0bd05a7d95950190ba2a3b3c63fc6d736ccabcd8723cb313b77a488a1ce60912",
+      "exported_sha256": "0bd05a7d95950190ba2a3b3c63fc6d736ccabcd8723cb313b77a488a1ce60912",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/run_prior_feature_counterfactual.py",
+      "source_sha256": "f4b614091ecd836cfd82bf208d9ecc888eb3157c9b083fb4930023b3fdb91b67",
+      "exported_sha256": "f4b614091ecd836cfd82bf208d9ecc888eb3157c9b083fb4930023b3fdb91b67",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/evaluate_prior_localization.py",
+      "source_sha256": "27fbad9f319cf8558b609050e42610ac580e202579bb2e7a8fa00e8f4d5c839c",
+      "exported_sha256": "27fbad9f319cf8558b609050e42610ac580e202579bb2e7a8fa00e8f4d5c839c",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/prepare_svsr_x4.py",
+      "source_sha256": "775f459416ac5e1a706b71adf5d3e6a0bef323b68ccf710ac1fe3f6a7069c98f",
+      "exported_sha256": "775f459416ac5e1a706b71adf5d3e6a0bef323b68ccf710ac1fe3f6a7069c98f",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/evaluate_fidelity_mechanism_controls.py",
+      "source_sha256": "d331b81b5745d3ef8cca1fa8fa6720cbb790af603044750f5c3d4b14c6e4caf8",
+      "exported_sha256": "d331b81b5745d3ef8cca1fa8fa6720cbb790af603044750f5c3d4b14c6e4caf8",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/evaluate_fidelity_followup_endpoint.py",
+      "source_sha256": "800680be782e1c94dafe7cc9ead58bc257400d3e4dc981b5e2aca1c136988dce",
+      "exported_sha256": "800680be782e1c94dafe7cc9ead58bc257400d3e4dc981b5e2aca1c136988dce",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/evaluate_prior_feature_controls.py",
+      "source_sha256": "99407c8d2bc515c8487a97f7fa6f88f07bd8627fd5eec5628b7e9ef9b265756e",
+      "exported_sha256": "99407c8d2bc515c8487a97f7fa6f88f07bd8627fd5eec5628b7e9ef9b265756e",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/evaluate_spatial_regions.py",
+      "source_sha256": "9c5f29198a42e9a51e9e30a9f7dd51c8b502607b6e43cb8994c21256a3aa49be",
+      "exported_sha256": "9c5f29198a42e9a51e9e30a9f7dd51c8b502607b6e43cb8994c21256a3aa49be",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/tests/test_runtime_options.py",
+      "source_sha256": "abbe5aad9fc46bb8a8434f89c98917db595352f9cf0665df03bb9fd229553af3",
+      "exported_sha256": "abbe5aad9fc46bb8a8434f89c98917db595352f9cf0665df03bb9fd229553af3",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/tests/test_ema_auxiliary_sync.py",
+      "source_sha256": "40754c187e1e166b190ca7c884ce7f65ba4810e541e6c04c0d374a3e19086082",
+      "exported_sha256": "40754c187e1e166b190ca7c884ce7f65ba4810e541e6c04c0d374a3e19086082",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/tests/test_camera_balanced_metric_statistics.py",
+      "source_sha256": "be26ed275797c40585df35fabb301e2e59b49e2fe2365410edb46bfec416f5bb",
+      "exported_sha256": "be26ed275797c40585df35fabb301e2e59b49e2fe2365410edb46bfec416f5bb",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/tests/test_paired_metric_statistics.py",
+      "source_sha256": "91091e91c302b3647811fc0864d5d04baf4a9a38eb45ef13aeabe96379539623",
+      "exported_sha256": "91091e91c302b3647811fc0864d5d04baf4a9a38eb45ef13aeabe96379539623",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/tests/test_evaluate_standard_sr_metrics.py",
+      "source_sha256": "a31b0a6e005904c81d53bc9693054720723885edb67fc9eb57d4aa7c6f13f09c",
+      "exported_sha256": "a31b0a6e005904c81d53bc9693054720723885edb67fc9eb57d4aa7c6f13f09c",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/tests/test_evaluate_pyiqa_metrics.py",
+      "source_sha256": "3bb46955df475d0bf51d727fc62dff5aaf2669ff8cea4bbdf975f151d4d13670",
+      "exported_sha256": "3bb46955df475d0bf51d727fc62dff5aaf2669ff8cea4bbdf975f151d4d13670",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/tests/test_audit_journal_training_protocol.py",
+      "source_sha256": "ff9b65be4ff45459d428016b673d609909e00ab4ca6590e9d626262219c1a6a9",
+      "exported_sha256": "ff9b65be4ff45459d428016b673d609909e00ab4ca6590e9d626262219c1a6a9",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/tests/test_verify_journal_initialization.py",
+      "source_sha256": "7440b70d3a5b4d58ff5279f842ed588eab9a4f7eb7c99884488c83ff427b9661",
+      "exported_sha256": "7440b70d3a5b4d58ff5279f842ed588eab9a4f7eb7c99884488c83ff427b9661",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/tests/test_prepare_svsr_x4.py",
+      "source_sha256": "e99c6a45d01bb966574c04b5a11caa67d229b421d3b4a3ccf4e8ecd3f13a738b",
+      "exported_sha256": "e99c6a45d01bb966574c04b5a11caa67d229b421d3b4a3ccf4e8ecd3f13a738b",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/tests/test_summarize_efficiency_profile.py",
+      "source_sha256": "2332538eb0e1e625bc19051e7147162191e246b3a4c84c6723cdfe807d61ee55",
+      "exported_sha256": "2332538eb0e1e625bc19051e7147162191e246b3a4c84c6723cdfe807d61ee55",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/tests/test_evaluate_fidelity_mechanism_controls.py",
+      "source_sha256": "5d3d3f1342406d33f7ebf2319c675f556965d986d5e2a2f5770b49fffc09f8e9",
+      "exported_sha256": "5d3d3f1342406d33f7ebf2319c675f556965d986d5e2a2f5770b49fffc09f8e9",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/tests/test_evaluate_fidelity_followup_endpoint.py",
+      "source_sha256": "f27ad4e78d6d4082b7888cadf509985e9f0ec9a6ee5bde0e22bff13938504d56",
+      "exported_sha256": "f27ad4e78d6d4082b7888cadf509985e9f0ec9a6ee5bde0e22bff13938504d56",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/tests/test_evaluate_prior_localization.py",
+      "source_sha256": "603c8398caa36eb16f8b2461b517a756736b936e3a701c24763cad4a3c191ffa",
+      "exported_sha256": "603c8398caa36eb16f8b2461b517a756736b936e3a701c24763cad4a3c191ffa",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/tests/test_run_legacy_basicsr_entrypoint.py",
+      "source_sha256": "a58412f6dd94dcee97b8de545e8fa6fb8a9e5d1d74deb42bdc57f6ed325d9529",
+      "exported_sha256": "a58412f6dd94dcee97b8de545e8fa6fb8a9e5d1d74deb42bdc57f6ed325d9529",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/options/train/journal/train_DRCT_x4_baseline_continue_100k.yml",
+      "source_sha256": "605ef1f29186b203984e96760cf81b07aac8f0312d754c84823ef606ae8f8fc9",
+      "exported_sha256": "d2335166bf581d49ff74e3bda50a0fc9e9b3e67085550e0f81097897557abe45",
+      "change": "portable paths only"
+    },
+    {
+      "path": "DRCT/options/train/journal/train_RN_PD_MAE_DRCT_x4_ungated_100k.yml",
+      "source_sha256": "6c963e45285d04f86d2bad1b4684669de91e6a125b94bef2501da819fcea666e",
+      "exported_sha256": "4bb19718feb2758d721ce8a37e8b24770c8a444b908a36e98c4b89bcfaf6d9f3",
+      "change": "portable paths only"
+    },
+    {
+      "path": "DRCT/options/train/journal/train_RN_PD_MAE_DRCT_x4_finetune_100k.yml",
+      "source_sha256": "516bcda99e0d36c879cf44336de4c74dd8288a6602e866e27523938b156a9664",
+      "exported_sha256": "d981b3733eb0a41cff1d06252705c8bbae427b4d168d6d162ab42266529f0176",
+      "change": "portable paths only"
+    },
+    {
+      "path": "DRCT/options/train/journal/train_SwinIR_x4_baseline_continue_100k.yml",
+      "source_sha256": "b0198d7d290bd302c0c3ec33352eaff5266e4ae95fc296eae2ad7903ce43a5b8",
+      "exported_sha256": "4ebb84bc6118af8f1e1679842c53161414d77699add635c99d6edca7df65da9d",
+      "change": "portable paths only"
+    },
+    {
+      "path": "DRCT/options/train/journal/train_RN_PD_MAE_SwinIR_x4_ungated_100k.yml",
+      "source_sha256": "e35bd4d340668580e690541e24ea84adb456b4eac6af42520eb42ea818aa1172",
+      "exported_sha256": "29452adcdd2c0715e80fa873e635c05489f3efd4000dcde2d9c5e8d002801299",
+      "change": "portable paths only"
+    },
+    {
+      "path": "DRCT/options/train/journal/train_RN_PD_MAE_SwinIR_x4_finetune_100k.yml",
+      "source_sha256": "4d746c5380facf13232b6aa44dfba90f30ad977d00140a239bd76680ed06a21c",
+      "exported_sha256": "29ad7c92ed6f8fdb8f84010306dba3cb7a65e9da228e6fd88fc7027e5b2a9f5d",
+      "change": "portable paths only"
+    },
+    {
+      "path": "DRCT/options/test/journal/test_RN_PD_MAE_DRCT_x4_realsr_only.yml",
+      "source_sha256": "3778e90e6442b5e3ff4d76902e9c63478c0814ab1a058f79fd69f4cc84296f1e",
+      "exported_sha256": "7dba35ac0b0616571dfe13fb9f8716eaafbe738f22fe1e8c9ae8c7a2363836e4",
+      "change": "portable paths only"
+    },
+    {
+      "path": "DRCT/options/test/journal/test_DRCT_x4_baseline_continue_100k.yml",
+      "source_sha256": "c0e6f6c249501966d8937850a1e4c009e5421dd49005a59afea6d3bfe6e61e68",
+      "exported_sha256": "b7a2ec9785b570a6c0cf18aee7a66bb6da75c86f9e2c565d61a232f2ff9f3a32",
+      "change": "portable paths only"
+    },
+    {
+      "path": "DRCT/options/test/journal/test_RN_PD_MAE_DRCT_x4_svsr_followup.yml",
+      "source_sha256": "dc82187e49e8fc07df29fbaeae68defe0c2685ee903a117fee277dc4dfaae804",
+      "exported_sha256": "3a801ef25ed7babc0b4cef0b71586fb49f33f6d82ea7512ab656943ae29163fe",
+      "change": "portable paths only"
+    },
+    {
+      "path": "DRCT/options/test/journal/test_DRCT_x4_baseline_svsr_followup.yml",
+      "source_sha256": "0372a77916960d3278f4769e0fdc3a653120dda5ec18556054520bd2a675fa6f",
+      "exported_sha256": "9719a1a2ee72599856504e6d98c41ea487c1f06aa5b29ddd612aeca152a97f76",
+      "change": "portable paths only"
+    },
+    {
+      "path": "DRCT/options/test/journal/test_RN_PD_MAE_SwinIR_x4.yml",
+      "source_sha256": "ac0b36c7652a85949bfeb1a6d22779e68fe78ab96c825a449e1aabbd9e1db578",
+      "exported_sha256": "0eb8d011a9d8cdf63a2d023990fc4bfccc597d1c1ddf29f906a450ec1981fca5",
+      "change": "portable paths only"
+    },
+    {
+      "path": "DRCT/options/test/journal/test_SwinIR_x4_baseline_continue_100k.yml",
+      "source_sha256": "d8fe085554a56f6a3541b808ba054e484a06bf286865bb371c3d8044a33a716b",
+      "exported_sha256": "43348f723e620b5497a42ef6b4d83c4ceefe348033436780fe78311e1e8befe9",
+      "change": "portable paths only"
+    },
+    {
+      "path": "DRCT/options/test/journal/test_RN_PD_MAE_SwinIR_x4_svsr_ungated.yml",
+      "source_sha256": "b565046f8c032754fa0d2fc836454f44c925770be8bebd00012220cf07c394ec",
+      "exported_sha256": "03b0b5b5c6c908897502d0a0c9ef3ae7789592ad323fdf49155cc1b2b5d15ce8",
+      "change": "portable paths only"
+    },
+    {
+      "path": "DRCT/options/test/journal/test_SwinIR_x4_baseline_svsr_ungated.yml",
+      "source_sha256": "33574e1bae52e4eae8deab7b9cf7e40b66079faa585c13546524658ec142bc53",
+      "exported_sha256": "238301f976b7c0dbcde4c6a8d464f1e5abf9aa534f75e525a95d94f4522ee893",
+      "change": "portable paths only"
+    },
+    {
+      "path": "DRCT/scripts/evaluate_preregistered_primary_endpoint.py",
+      "source_sha256": "675d085856d1d85a88bd1295afb34d464d74085df661e5cd2bd2435e38d59a7b",
+      "exported_sha256": "675d085856d1d85a88bd1295afb34d464d74085df661e5cd2bd2435e38d59a7b",
+      "change": "unchanged"
+    },
+    {
+      "path": "DRCT/scripts/evaluate_prior_stage_controls.py",
+      "source_sha256": "76463d39a5ef29fd76fdf87c9eb75406ce0a08388c96254b21f5c88f7612e57f",
+      "exported_sha256": "76463d39a5ef29fd76fdf87c9eb75406ce0a08388c96254b21f5c88f7612e57f",
+      "change": "unchanged"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+name: journal_test_SwinIR_x4_baseline_svsr_ungated
+model_type: DRCTModel
+scale: 4
+num_gpu: 1
+manual_seed: 0
+output_root: runs/evaluation
+
+datasets:
+  test_1:
+    name: SVSR_x4
+    type: PairedImageDataset
+    dataroot_gt: data/benchmarks/SVSR/GT_X4_by_LR_stem
+    dataroot_lq: data/benchmarks/SVSR/extracted/SVSR/LR
+    io_backend: {type: disk}
+
+network_g:
+  type: RNPDMAESwinIR
+  upscale: 4
+  in_chans: 3
+  img_size: 64
+  window_size: 8
+  img_range: 1.0
+  depths: [6, 6, 6, 6, 6, 6]
+  embed_dim: 180
+  num_heads: [6, 6, 6, 6, 6, 6]
+  mlp_ratio: 2
+  upsampler: nearest+conv
+  resi_connection: 1conv
+  use_sft: false
+  mae_checkpoint: ~
+
+path:
+  pretrain_network_g: runs/swinir/journal_SwinIR_x4_baseline_ungated_pivot_100k/models/net_g_100000.pth
+  param_key_g: params_ema
+  strict_load_g: true
+
+tile: {tile_size: 128, tile_pad: 16}
+
+val:
+  save_img: true
+  save_metrics_csv: true
+  suffix: ~
+  pbar: true
+  metrics:
+    psnr: {type: calculate_psnr, crop_border: 4, test_y_channel: true}
+    ssim: {type: calculate_ssim, crop_border: 4, test_y_channel: true}
+    niqe: {type: calculate_niqe, crop_border: 4, test_y_channel: false}

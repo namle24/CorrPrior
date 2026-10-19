@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "For this private development version, cite the software repository. Publication metadata will be added when confirmed."
+type: software
+title: "CorrPrior: Correction-Calibrated Spatial Priors for Real-World Image Super-Resolution"
+authors:
+  - family-names: Le
+    given-names: Hoai Nam
+  - family-names: Nguyen
+    given-names: Hoang Ha
+repository-code: "https://github.com/namle24/CorrPrior"
+abstract: "Research implementation of paired-correction prior learning and frozen spatial feature transfer for real-world image super-resolution. Manuscript and trained checkpoints are maintained separately."
+keywords:
+  - image super-resolution
+  - image restoration
+  - spatial prior
+  - representation learning

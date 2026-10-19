@@ -1,0 +1,2 @@
+# Use a separate environment for perceptual evaluation. See docs/evaluation.md.
+pyiqa==0.1.16

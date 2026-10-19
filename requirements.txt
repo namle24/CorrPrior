@@ -1,0 +1,15 @@
+# Install the matching torch/torchvision CPU or CUDA wheels first.
+# This is the portable validation environment, not the original training lockfile.
+torch==2.5.1
+torchvision==0.20.1
+basicsr==1.4.2
+timm==0.9.16
+numpy==1.26.4
+opencv-python==4.10.0.84
+scikit-image==0.24.0
+scipy==1.14.1
+Pillow==10.4.0
+einops==0.8.0
+PyYAML==6.0.2
+tqdm==4.66.5
+yapf==0.40.2
