@@ -19,6 +19,24 @@ Numerical reproduction also requires artifacts outside this repository:
 Selected images embedded in documentation figures are included. Dataset
 collections, full-resolution SR outputs and manuscript files are kept separately.
 
+## Installation
+
+Use Python 3.12 and a PyTorch build compatible with your hardware; see the
+[environment notes](#environment) for CUDA and CPU options.
+
+```bash
+git clone https://github.com/namle24/CorrPrior.git
+cd CorrPrior
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install torch==2.5.1 torchvision==0.20.1
+python -m pip install -r requirements.txt
+```
+
+Continue with [data preparation](data.md), [training](reproduction.md) or
+[evaluation](evaluation.md).
+
 ## Environment
 
 The portable test setup uses Python 3.12, PyTorch 2.5.1, torchvision 0.20.1,
