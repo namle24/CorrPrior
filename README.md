@@ -4,8 +4,8 @@
 
 Le Hoai Nam and Nguyen Hoang Ha · University of Science and Technology of Hanoi
 
-CorrPrior learns a spatial prior from degraded–clean pairs using reconstruction
-and correction supervision. The frozen encoder guides DRCT through residual SFT blocks.
+- **Prior learning:** Learn spatial features from degraded–clean pairs using reconstruction and correction supervision.
+- **SR transfer:** Freeze the learned encoder and guide DRCT through residual SFT blocks.
 
 ![CorrPrior: prior learning in Stages 1–2, followed by frozen-encoder transfer to DRCT in Stage 3.](docs/assets/overview.png)
 
@@ -13,7 +13,8 @@ and correction supervision. The frozen encoder guides DRCT through residual SFT 
 
 ## Results
 
-RealSR ×4, camera-balanced. Shared 100k-update SR budget; prior pretraining excluded.
+- **Benchmark:** RealSR ×4, camera-balanced.
+- **Training:** Shared 100k-update SR budget, excluding prior pretraining.
 
 | Method | PSNR (dB) ↑ | SSIM ↑ | DISTS ↓ | LPIPS ↓ |
 | --- | ---: | ---: | ---: | ---: |
@@ -25,17 +26,11 @@ RealSR ×4, camera-balanced. Shared 100k-update SR budget; prior pretraining exc
 
 ## Getting started
 
-[Installation](docs/reproducibility.md#installation) · [Data](docs/data.md) ·
-[Training](docs/reproduction.md) · [Evaluation](docs/evaluation.md)
-
-Pretrained checkpoints are not yet released.
+- [Installation](docs/reproducibility.md#installation) and [data preparation](docs/data.md).
+- [Training](docs/reproduction.md) and [evaluation](docs/evaluation.md).
+- **Checkpoints:** Not yet released.
 
 ## Citation and acknowledgements
 
-[Citation](CITATION.cff) · [Licensing](THIRD_PARTY_NOTICES.md)
-
-Built on [DRCT](https://github.com/ming053l/DRCT),
-[BasicSR](https://github.com/XPixelGroup/BasicSR),
-[MAE](https://github.com/facebookresearch/mae),
-[timm](https://github.com/huggingface/pytorch-image-models) and
-[SwinIR](https://github.com/JingyunLiang/SwinIR).
+- [Citation](CITATION.cff) and [licensing](THIRD_PARTY_NOTICES.md).
+- Built on [DRCT](https://github.com/ming053l/DRCT), [BasicSR](https://github.com/XPixelGroup/BasicSR), [MAE](https://github.com/facebookresearch/mae), [timm](https://github.com/huggingface/pytorch-image-models) and [SwinIR](https://github.com/JingyunLiang/SwinIR).
