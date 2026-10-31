@@ -40,6 +40,17 @@ lineage records remain with the authors. Selected Stage 2 checkpoint SHA-256:
 `4bcef2bc38f25410869c3a91c597b9e896032c5ec34362daa488576f4729f06a`.
 This hash identifies an existing artifact; it is not a download link.
 
+## Documentation update, 31 October 2026
+
+The README and software citation use the current manuscript title,
+*Correction-Supervised Spatial Prior for Real-World Image Super-Resolution*.
+The method description and detailed result discussion are organized under
+`docs/`. Figure 1 uses the larger-font version prepared on 29 October; its
+source and asset hashes are recorded in [figures.md](figures.md).
+
+This update changes documentation and figure assets. The retained research
+source hashes and reported numerical results are unchanged.
+
 ## Future changes
 
 If retained code changes, document the reason and update the exported hash

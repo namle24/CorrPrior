@@ -5,17 +5,25 @@
   "files": [
     {
       "path": "docs/assets/architecture.png",
-      "source": "results/pd_mae_drct/journal_drawio_final_20261014/corrprior_unified_preview.png",
-      "operation": "byte-for-byte copy of approved architecture preview",
-      "width": 2002,
-      "height": 1478,
-      "sha256": "856826029b647410d5f02c74923a6d620ec910009a523ac31ec3728033d034da"
+      "source": "results/pd_mae_drct/figure1_pdf_matched_20261029/Figure1_preview.png",
+      "operation": "byte-for-byte copy of the larger-font Figure 1 preview",
+      "width": 2004,
+      "height": 2165,
+      "sha256": "57891e8ee5b0511fcd2e5e4d44b32a7ce8167bcdfd8171ddc9e4444ab9cc9be4"
     },
     {
       "path": "docs/assets/architecture.drawio",
-      "source": "results/pd_mae_drct/journal_drawio_final_20261014/corrprior_unified.drawio",
-      "operation": "byte-for-byte copy of corresponding editable source",
-      "sha256": "fd036397ca353d5ae2bb0a02dfc4c9bdd9bb1c38549f852c24f151dca4a5abed"
+      "source": "results/pd_mae_drct/figure1_pdf_matched_20261029/Figure1.drawio",
+      "operation": "byte-for-byte copy of the corresponding larger-font editable source",
+      "sha256": "1db5bbc74b02ac6a179976f6c64d363af005e570018b59289ed0cac3b5b4089f"
+    },
+    {
+      "path": "docs/assets/overview.png",
+      "source": "docs/assets/architecture.drawio",
+      "operation": "render panels (a) and (b) from the same native draw.io model, without the lower detail panels",
+      "sha256": "1a08fe922e0e8c6aebf34de4a4a72a5ae2a169be6e62496866e5fb341bc9468b",
+      "width": 2004,
+      "height": 1476
     },
     {
       "path": "docs/assets/qualitative_comparison.jpg",
@@ -39,5 +47,6 @@
       "height": 566,
       "sha256": "3a2e61a9307eeeee86fa21a76b2c4e570b454d412eda5f517d889f6a860d3dc8"
     }
-  ]
+  ],
+  "updated_on": "2026-10-31"
 }
