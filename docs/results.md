@@ -1,8 +1,8 @@
 # Reported results and their scope
 
-These values summarize the authors' existing experiments, not runs performed
-during repository extraction. The manuscript is kept separately by request.
-The snapshot identifier is recorded in `provenance.md`.
+These tables summarize the reported experiments. The experiment snapshot is
+recorded in [provenance.md](provenance.md); evaluation settings and commands are
+in [evaluation.md](evaluation.md).
 
 ## Comparison with existing methods
 
@@ -52,6 +52,21 @@ is a secondary benefit, as quantified below. AdcSR is a one-step generative
 method, not a fidelity-trained counterpart.
 
 ## Controlled comparisons
+
+Camera-balanced RealSR results for 4× SR:
+
+| Method | Prior | PSNR (dB) ↑ | SSIM ↑ | DISTS ↓ | LPIPS ↓ |
+| --- | --- | ---: | ---: | ---: | ---: |
+| DRCT-Base | None | 27.2828 | 0.7807 | 0.196085 | **0.301174** |
+| DRCT-RandPrior | Frozen random encoder | 27.2985 | 0.7804 | 0.196111 | 0.302284 |
+| **CorrPrior** | Frozen learned encoder | **27.4307** | **0.7831** | **0.195052** | 0.303456 |
+| CorrPrior-Gated | Learned encoder and score gating | 27.4290 | 0.7828 | 0.195770 | 0.303573 |
+
+All four variants share the downstream initialization, data order, seed, loss
+and 100,000-update SR budget. The learned and random priors have the same
+architecture. Prior pretraining is outside that downstream budget. These are
+single-seed results; the confidence intervals below describe test-sample
+uncertainty rather than variation across training seeds.
 
 ![Matched model comparisons and fixed-checkpoint feature interventions, with paired 95% confidence intervals.](assets/psnr_effects.svg)
 

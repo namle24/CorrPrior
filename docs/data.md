@@ -1,6 +1,7 @@
 # Data layout and preparation
 
-No datasets or example benchmark crops are distributed in this repository.
+Dataset collections are not included; selected example crops appear only in the
+[documentation figures](figures.md).
 The directory names below are conventions used by the configuration generator;
 `--data-root` can point to storage outside the clone.
 

@@ -1,8 +1,7 @@
 # Attribution and licensing scope
 
-This private extraction does **not** assign a blanket license to CorrPrior's
-original code. The authors must choose the release terms before publication.
-Existing third-party rights and notices are not changed by that decision.
+A project-wide license has not yet been assigned to CorrPrior's original code.
+The component licenses and upstream notices below remain applicable.
 
 ## DRCT
 
@@ -32,10 +31,8 @@ Transformer blocks are imported from
 DRCT also contains utility code attributed to timm in its source comments;
 the accompanying Apache 2.0 license is preserved in
 [`LICENSES/timm-LICENSE.txt`](LICENSES/timm-LICENSE.txt).
-The private source did not carry a complete file-level licensing inventory.
-The authors should confirm the precise provenance and licensing of the prior
-implementation before any public release. Do not label the entire repository
-MIT based on the DRCT component alone.
+The source does not include a complete file-level licensing inventory.
+The DRCT MIT license applies to that component, not to the entire repository.
 
 ## BasicSR and SwinIR
 
@@ -47,6 +44,8 @@ complete BasicSR nor the SwinIR source tree is redistributed in this extraction.
 
 ## Datasets and pretrained weights
 
-DF2K, OST, RealSR, SVSR, pretrained backbones and metric networks are not
-redistributed. Obtain them from their providers under the applicable terms.
+Dataset collections (DF2K, OST, RealSR and SVSR), pretrained backbones and
+metric networks are not redistributed. Obtain them from their providers under
+the applicable terms. Selected dataset-derived images appear in the
+[documentation figures](docs/figures.md) and retain their original terms.
 This notice does not grant permission to redistribute those assets.
