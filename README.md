@@ -4,6 +4,8 @@
 
 Le Hoai Nam and Nguyen Hoang Ha · University of Science and Technology of Hanoi
 
+[Method](#method) · [Results](#results) · [Installation](#installation) · [Training and evaluation](#training-and-evaluation)
+
 CorrPrior learns spatial features from degraded–clean image pairs and uses them
 to guide real-world 4× super-resolution.
 
@@ -20,16 +22,61 @@ to guide real-world 4× super-resolution.
 
 ## Results
 
-- **Benchmark:** RealSR ×4, with equal weighting of Canon and Nikon.
-- **Protocol:** Shared SR initialization, data order, seed, loss and 100k updates. Prior pretraining is additional.
+- **Evaluation:** Same LR inputs and evaluator; PSNR/SSIM use luminance with a four-pixel border crop.
+- **External methods:** Each retains its own training history.
+- **Bold values:** Best metric values in each table, including ties.
 
-| Method | PSNR (dB) ↑ | SSIM ↑ | DISTS ↓ | LPIPS ↓ |
+### RealSR ×4
+
+Canon and Nikon are weighted equally.
+
+| Method | PSNR (dB) ↑ | SSIM ↑ | LPIPS ↓ | DISTS ↓ |
 | --- | ---: | ---: | ---: | ---: |
-| DRCT-Base | 27.2828 | 0.7807 | 0.196085 | **0.301174** |
-| DRCT-RandPrior | 27.2985 | 0.7804 | 0.196111 | 0.302284 |
-| **CorrPrior** | **27.4307** | **0.7831** | **0.195052** | 0.303456 |
+| BSRGAN | 26.5080 | 0.7750 | 0.2687 | 0.1759 |
+| Real-ESRGAN | 25.8287 | 0.7733 | 0.2730 | 0.1688 |
+| SwinIR-M | 26.0297 | 0.7807 | 0.2597 | 0.1610 |
+| SwinIR-L | 26.4382 | 0.7869 | 0.2516 | **0.1545** |
+| SRFormer-S | 25.7279 | 0.7768 | **0.2495** | 0.1601 |
+| E2-RealSR | 26.4169 | 0.7821 | 0.2862 | 0.1889 |
+| DAA-IMDN | **27.8407** | **0.8030** | 0.3484 | 0.2020 |
+| AdcSR | 25.6082 | 0.7326 | 0.2989 | 0.1864 |
+| DRCT-Base | 27.2828 | 0.7807 | 0.3012 | 0.1961 |
+| **CorrPrior** | 27.4307 | 0.7831 | 0.3035 | 0.1951 |
 
-[SVSR, ablations, confidence intervals and visual comparisons](docs/results.md)
+### SVSR ×4
+
+1,119 captures from 141 scenes.
+
+| Method | PSNR (dB) ↑ | SSIM ↑ | LPIPS ↓ | DISTS ↓ |
+| --- | ---: | ---: | ---: | ---: |
+| BSRGAN | 26.8788 | 0.8234 | 0.2927 | 0.1886 |
+| Real-ESRGAN | 26.0319 | 0.8087 | 0.2996 | 0.1813 |
+| SwinIR-M | 26.4013 | 0.8200 | 0.2953 | 0.1789 |
+| SwinIR-L | 26.6967 | 0.8250 | **0.2800** | **0.1715** |
+| SRFormer-S | 25.7614 | 0.8036 | 0.2829 | 0.1743 |
+| E2-RealSR | 27.2979 | 0.8037 | 0.3553 | 0.2292 |
+| DAA-IMDN | 27.4485 | 0.8089 | 0.4538 | 0.2436 |
+| AdcSR | 25.4297 | 0.7488 | 0.3439 | 0.2004 |
+| DRCT-Base | 27.5431 | **0.8302** | 0.3033 | 0.2165 |
+| **CorrPrior** | **27.5461** | **0.8302** | 0.3031 | 0.2141 |
+
+The matched SVSR PSNR difference between CorrPrior and DRCT-Base is inconclusive;
+see the [paired comparisons](docs/results.md#controlled-comparisons).
+
+### Controlled comparisons on RealSR
+
+- **Matched SR training:** Same initialization, data order, seed, loss and 100k updates. Prior pretraining is additional.
+- **Random-prior control:** Same encoder architecture and SFT capacity as CorrPrior.
+
+| Method | Prior | PSNR (dB) ↑ | SSIM ↑ | LPIPS ↓ | DISTS ↓ |
+| --- | --- | ---: | ---: | ---: | ---: |
+| DRCT-Base | None | 27.2828 | 0.7807 | **0.301174** | 0.196085 |
+| DRCT-RandPrior | Frozen random encoder | 27.2985 | 0.7804 | 0.302284 | 0.196111 |
+| **CorrPrior** | Frozen learned encoder | **27.4307** | **0.7831** | 0.303456 | **0.195052** |
+| CorrPrior-Gated | Learned encoder and score gating | 27.4290 | 0.7828 | 0.303573 | 0.195770 |
+
+[Confidence intervals and diagnostics](docs/results.md#controlled-comparisons) ·
+[Visual comparisons](docs/results.md#qualitative-comparison)
 
 ## Installation
 
